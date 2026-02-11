@@ -1,7 +1,7 @@
 name: PR on open greeting
 
 on:
-  pull_request:
+  issues:
     types: [opened]
 
 jobs:
