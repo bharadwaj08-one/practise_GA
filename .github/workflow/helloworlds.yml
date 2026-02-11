@@ -1,0 +1,13 @@
+name: PR on open greeting
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print hello world
+        run: echo "Hello world, the PR was opened!"
+    
